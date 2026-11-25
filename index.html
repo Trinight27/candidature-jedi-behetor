@@ -162,7 +162,7 @@
     transform: scaleX(0); transition: transform .3s ease;
   }
   nav a:hover::after { transform: scaleX(.9); }
-  main { max-width: 900px; margin: 0 auto; padding: 40px 20px 80px; counter-reset: seg; }
+  main { max-width: 900px; margin: 0 auto; padding: 40px 20px 80px; counter-reset: seg; overflow-x: clip; }
   section { margin-bottom: 56px; counter-increment: seg; }
   /* Titres de dossier, numerotes automatiquement */
   h2 {
@@ -194,7 +194,7 @@
     position: relative;
     background: linear-gradient(180deg, var(--panel2), var(--panel));
     border: 1px solid var(--line); border-radius: 6px;
-    padding: 22px 24px; margin-bottom: 18px;
+    padding: 22px 24px; margin-bottom: 18px; overflow: hidden;
     clip-path: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px);
     box-shadow: inset 0 0 40px rgba(78,201,255,.04), 0 0 24px rgba(78,201,255,.05);
     transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
